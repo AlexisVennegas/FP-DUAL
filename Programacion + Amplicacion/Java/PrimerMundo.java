@@ -1,3 +1,5 @@
+package code;
+
 import java.util.Scanner;
 
 public class PrimerMundo {
@@ -28,11 +30,7 @@ public class PrimerMundo {
 		float numeroDivido = 5;
 		System.out.println(5 % 2);
 		
-		
-		
-		
-		
-		
+
 		Scanner teclado = new Scanner(System.in);
 		
 		System.out.println("introduce el numero 1");
