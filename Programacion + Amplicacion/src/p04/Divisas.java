@@ -1,4 +1,4 @@
-package code;
+package p04;
 
 import java.util.Scanner;
 

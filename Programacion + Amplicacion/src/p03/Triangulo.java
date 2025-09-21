@@ -1,4 +1,4 @@
-package code;
+package p03;
 
 import java.util.Scanner;
 
@@ -8,7 +8,6 @@ public class Triangulo {
 		Scanner teclado;
 		double  cateto1,
 				cateto2,
-				cateto3,
 				hipotenusa;
 		
 		
