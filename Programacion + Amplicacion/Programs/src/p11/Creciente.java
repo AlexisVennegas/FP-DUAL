@@ -24,5 +24,7 @@ public class Creciente {
 		else										System.out.println("no es orden creciente");
 			
 		
+		scanner.close();
+		
 	}
 }

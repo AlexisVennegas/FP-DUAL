@@ -11,7 +11,7 @@ public class Bucle {
 		
 		while(numero <= 1000) {
 			System.out.println(numero);
-			   Thread.sleep(22); 
+			   Thread.sleep(20); 
 			numero++;
 		}
 	}
