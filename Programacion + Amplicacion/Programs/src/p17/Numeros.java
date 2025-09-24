@@ -1,6 +1,4 @@
 package p17;
-
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Numeros {
