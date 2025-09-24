@@ -12,11 +12,11 @@ public class Gauss {
 		int resultado,
 			numero;
 		
-		
-		numero = 0;
+		numero = 1;
 		resultado = 0;
 		while(numero <= 1000) {
 			resultado += numero;
+			System.out.println(resultado + " + " + numero + " = " + resultado);
 			numero++;
 		}
 		
@@ -47,10 +47,12 @@ public class Gauss {
 		int resultado;
 		
 		
-		resultado = segundoIntento();
+		resultado = primerIntento();
 	
 		
 		
 		System.out.println("resultado: " + resultado);
+		
+		
 	}
 }

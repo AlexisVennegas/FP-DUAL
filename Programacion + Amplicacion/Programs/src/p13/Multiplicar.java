@@ -7,20 +7,21 @@ public class Multiplicar {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		int numero;
+		int numero,
+			temporal = -1;
 		
-		
-		System.out.println("introduce un numero");
-		numero = scanner.nextInt();
-		
-		
-		if(numero > 1) {
-			for(int i = 1; i <= 9; i++) {
-				System.out.println(numero + "*" + i + "= " + numero * i);
-			}
+		while(true) {
+			
+			System.out.println("introduce un numero del 1 al 9");
+			numero = scanner.nextInt();
+			
+			if(!(numero >= 0 && numero <= 9)) System.out.println("no esta en el rango");
+			else {
+				while(++temporal <= 10) 
+					System.out.println(numero + " * " + temporal + " = " + numero * temporal);
+				break;
+				}
 		}
-		else System.out.println("introduce un numero valido");
-		
 		scanner.close();
 	}
 }
