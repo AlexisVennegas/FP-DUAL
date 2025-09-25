@@ -12,8 +12,8 @@ public class Numeros {
 		System.out.println("introduce un numero");
 		numero = scanner.nextInt();
 		
-		
 		while(multiplo <= numero) {
+			i 
 			System.out.println(multiplo);
 			multiplo += 4;
 		}

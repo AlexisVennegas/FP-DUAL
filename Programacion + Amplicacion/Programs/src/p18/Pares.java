@@ -11,15 +11,16 @@ public class Pares {
 				i= 0;
 
 		System.out.println("introduce 10 numeros");		
-		while(i <= 10) {
+		while(i < 10) {
 			int temporal = 0;
 			temporal = scanner.nextInt();
 			if(temporal % 2 == 0) {
 				resultado += temporal;
 			}
 			i++;
-			if(i == 10) break;
+	
 		}
 		System.out.println("resultado: " + resultado);
+		scanner.close();
 	}
 }
