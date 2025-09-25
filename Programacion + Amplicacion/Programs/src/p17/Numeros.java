@@ -26,7 +26,7 @@ public class Numeros {
 
 		
 		
-		
+		scanner.close();
 	
 		
 	}

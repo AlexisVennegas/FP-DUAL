@@ -11,9 +11,12 @@ public class Numeros {
 		
 		System.out.println("introduce un numero");
 		numero = scanner.nextInt();
+		if(numero % 4 != 0 ) {
+			System.out.println("no es un multiplo de 4");
+			return;
+		}
 		
 		while(multiplo <= numero) {
-			i 
 			System.out.println(multiplo);
 			multiplo += 4;
 		}

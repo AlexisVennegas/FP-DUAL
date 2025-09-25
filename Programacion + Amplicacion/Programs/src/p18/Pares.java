@@ -18,7 +18,6 @@ public class Pares {
 				resultado += temporal;
 			}
 			i++;
-	
 		}
 		System.out.println("resultado: " + resultado);
 		scanner.close();
