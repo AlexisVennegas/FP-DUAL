@@ -33,23 +33,20 @@ public class Juego {
 		
 		bienvenida();
 		
-		
-		System.out.println("(DEBUG) número a adivinar: " + numeroAdivinar);
-		System.out.println("intentos: " + intentos);
-	
+		System.out.println("debug numeroAdiviar: " + numeroAdivinar);
 		while(intentos >= 1 && !ganador) {
-			System.out.println("--------------------------------");
+			System.out.println("........................................");
 			System.out.println("INTENTOS: " + intentos);
 			System.out.println("INTRODUCE UN NUMERO: ");
 			numeroUsuario = scanner.nextInt();
 		
 			
 			if(numeroUsuario == numeroAdivinar) {
-				System.out.println("🎉 HAZ GANADO");
+				System.out.println("🎉 HAZ GANADO  🎉");
 				ganador = true;
 			}
-			else if(numeroUsuario < numeroAdivinar) 	System.out.println("EL NUMERO ES MAYOR :D");
-			else if (numeroUsuario > numeroAdivinar) 	System.out.println("EL NUMERO ES MENOR :D");
+			else if(numeroUsuario < numeroAdivinar) 	System.out.println("> EL NUMERO ES MAYOR :D");
+			else if (numeroUsuario > numeroAdivinar) 	System.out.println("< EL NUMERO ES MENOR :D");
 			else  										System.out.println("VUELVE A INTENTARLO");
 			intentos--;
 			
