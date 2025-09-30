@@ -1,0 +1,13 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Página-1" id="DXV36eIeYM3IPIaF0B2E">
+    <mxGraphModel dx="1426" dy="441" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L3NOBXTdYQaS6EHQkUNU-1" value="Enunciado 7 Modelo Entidad Interrelación&#xa;Una empresa dedicada a comercializar cocinas desea aumentar su control sobre aquellos&#xa;elementos que le afectan. Del resultado del análisis que realiza obtiene las siguientes&#xa;informaciones:&#xa;Hay una serie de fabricantes de muebles de cocina. De cada fabricante se dispone de un&#xa;nombre, una dirección y una relación de números de teléfono. Cada uno de ellos fabrica varios&#xa;muebles de cocina. Un mueble de cocina tiene una determinada línea un determinado color,&#xa;unas dimensiones dadas (ancho, alto, largo), y puede tener una de las siguientes categorías:&#xa;mueble alto, mueble bajo, panel y encimera. De los muebles bajos interesa saber la altura&#xa;sobre el suelo y de las encimeras interesa saber su tipo (mármol o aglomerado)&#xa;Cada Fabricante puede trabajar con varios distribuidores y cada distribuidor trabaja al menos&#xa;con un fabricante. De un distribuidor se dispone del nombre, dirección, y una relación de&#xa;números de teléfono.&#xa;De una cocina se identifica por un código y nos interesa saber el número de muebles que la&#xa;componen.&#xa;Cada cocina la puede vender un único distribuidor , aunque cada distribuidor puede vender&#xa;varias cocinas. Un distribuidor puede ceder una cocina a otro, para que éste pueda venderla.&#xa;Cada cocina la debe montar al menos un montador y el mismo montador puede montar varias&#xa;cocinas. De un montador nos interesa su NIF, nombre, dirección, único número de teléfono y el&#xa;número de cocinas que ha montado.&#xa;Cada cocina pueden comprarla uno o varios clientes y el mismo cliente puede comprar varias&#xa;cocinas. De un cliente nos interesa su NIF, su nombre, dirección y único número de teléfono" style="text;whiteSpace=wrap;html=1;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+          <mxGeometry x="190" y="460" width="490" height="340" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
