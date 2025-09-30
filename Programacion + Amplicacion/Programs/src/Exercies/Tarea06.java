@@ -9,7 +9,7 @@ public class Tarea06 {
 		Scanner scanner = new Scanner(System.in);
 		int numero,
 			i = 1;
-			j = 1;
+
 		
 		System.out.println("introduce un numero: ");
 		numero = scanner.nextInt();
