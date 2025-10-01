@@ -10,7 +10,7 @@ public class Numeros {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		
+	
 		
 		for(i = 0; i < 10; i++) {
 			System.out.println("\nintroduce a: ");
