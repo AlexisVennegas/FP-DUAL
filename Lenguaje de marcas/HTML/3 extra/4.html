@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario</title>
+  <style>
+    td, th {
+      border: 1px solid black;
+      padding: 6px;
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <!-- Cabecera de días -->
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="3">Lunes</td>
+      <td colspan="2">Martes</td>
+      <td colspan="3">Miércoles</td>
+      <td colspan="2">Jueves</td>
+      <td colspan="2">Viernes</td>
+    </tr>
+
+    <!-- Columna MAÑANA (ocupa 6 filas) -->
+    <tr>
+      <td rowspan="7" align="center">
+        M<br>A<br>Ñ<br>A<br>N<br>A
+      </td>
+      <td>1</td>
+      <td colspan="3" rowspan="2">Bases de Datos<br>Prof: Luis Miguel Cobo</td>
+      <td colspan="2" rowspan="2">Sistemas Informáticos<br>Prof: Pilar Martín</td>
+      <td colspan="3" rowspan="2">Lenguajes de Marcas<br>Prof: Hugo Palacio</td>
+      <td colspan="2" rowspan="2">Sistemas Informáticos<br>Prof: Pilar Martín</td>
+      <td colspan="2" rowspan="2">F.O.L</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td colspan="3" rowspan="3">Programación<br>Prof: Luis Miguel Cobo</td>
+      <td colspan="2" rowspan="2">Base de datos</td>
+      <td colspan="3" rowspan="2">Lenguajes de Marcas</td>
+      <td colspan="2" rowspan="1">Formacion orientacion laboral</td>
+      <td colspan="2" rowspan="2">Programacion</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+        <td colspan="2" rowspan="1">Programación</td>
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td colspan="4" rowspan="2">Programacion</td>
+      <td colspan="1" rowspan="2">Bases de Datos</td>
+      <td colspan="2" rowspan="2" >Programación</td>
+      <td colspan="2" rowspan="2">Entornos de desarollo </td>
+    </tr>
+
+    <tr>
+      <td>6</td>
+        <td colspan="3">Lenguajes de Marcas</td>
+    </tr>
+    <tr>
+        <td>7</td>
+          <td colspan="3">Tutoría Grupo</td>
+      <td colspan="2">Tutoría Individual</td>
+    </tr>
+  </table>
+</body>
+</html>
