@@ -1,4 +1,4 @@
-package Exercies;
+package p22;
 
 import java.util.Scanner;
 
