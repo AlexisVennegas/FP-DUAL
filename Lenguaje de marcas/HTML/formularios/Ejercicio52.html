@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Cuestionario princial
+    <form action="enviar.php" method="post">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" size="40" id="" placeholder="Escriba su nombre y apellidos...">
+
+        <br>
+        <label for="turno">Turno</label> <br>
+        <input type="radio" name="turno" id="Diurno" value="nocturno">Diurno <br>
+        <input type="radio" name="turno" id="Verspertino" value="diurno">Verspertino <br>
+
+        <label for="familia">Numero de miembros de la familia</label><br>
+        <input type="number" name="familia" id="familia" size="10" min="1" max="20">
+
+        <br>
+        <label for="idiomas">Idiomas que conoce</label> <br>
+        <input type="checkbox" name="frances" id="frances" value="frances">Francés <br>
+        <input type="checkbox" name="ingles" id="ingles" value="ingles">Inglés
+
+        <br>
+
+        <label for="comentarios">otros</label> <br>
+        <textarea name="comentarios" id="comentarios" cols="50" rows="5"></textarea>
+
+        <br>
+        <input type="submit" value="ENVIAR DATOS">
+        <input type="reset" value="VOLVER A COMENZAR">
+    </form>
+
+    
+</body>
+</html>
