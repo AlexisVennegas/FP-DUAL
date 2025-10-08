@@ -1,4 +1,4 @@
-package Objetos1;
+package pokemon;
 
 public class Point {
 	public int x = 0;
@@ -10,9 +10,9 @@ public class Point {
 	}
 	
 	
-	public void movePoint(int a, int b) {
-		this.x = a;
-		this.y = b;
+	public void movePoint(int newX, int newY) {
+		this.x = newX;
+		this.y = newY;
 	}
 	
   
@@ -24,8 +24,8 @@ public class Point {
 	}
 
 	public void mostrarDato() {
-		System.out.println("mostrar x: " + x);
-		System.out.println("mostrar y" + y);
+		System.out.println("mostrar x: " + this.x);
+		System.out.println("mostrar y" + this.y);
 	}
 	
 

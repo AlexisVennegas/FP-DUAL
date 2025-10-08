@@ -15,5 +15,18 @@ public class Principal {
 		
 		System.out.println(rectangulo1 + " || " + rectangulo1.getPoint() + " || " + rectangulo2.getPoint());
 		
+
+		System.out.println("memoria del punto: " + punto1.toString()); 
+		
+		
+		System.out.println(punto1.getX());
+		System.out.println(punto1.getY());
+		punto1.movePoint(0,0);
+
+		System.out.println(punto1.getX());
+		System.out.println(punto1.getY());
+		
+		System.out.println(punto1.toString());
+		punto1.mostrarDato();
 	}
 }
