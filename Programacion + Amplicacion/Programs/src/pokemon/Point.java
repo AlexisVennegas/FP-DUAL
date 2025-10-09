@@ -25,7 +25,7 @@ public class Point {
 
 	public void mostrarDato() {
 		System.out.println("mostrar x: " + this.x);
-		System.out.println("mostrar y" + this.y);
+		System.out.println("mostrar y: " + this.y);
 	}
 	
 
