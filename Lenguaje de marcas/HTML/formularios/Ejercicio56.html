@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            width: 400px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .form-row > input{
+            width: 300px;
+        }
+        textarea {
+            width: 350px;
+            height: 150px;
+        }
+        .form-row-2 {
+        border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h2>Informacion sobre el producto</h2>
+        <fieldset>
+            <legend>Datos basicos</legend>
+            <div class="form-row">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="form-row">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-col">
+                <label for="Foto">Foto</label>
+                <input type="text" name="" id="">
+                <input type="file" id="foto" name="foto" style="display:none;">
+                <label for="foto" style="background-color:#eee; padding:2px 5px; border:1px solid black; cursor:pointer;">Examinar...</label>
+                <span id="file-name"></span>
+                <script>
+                document.getElementById('foto').addEventListener('change', function(){
+                    document.getElementById('file-name').textContent = this.files[0]?.name || '';
+                });
+                </script>
+            </div>
+            <div class="form-col">
+                <input type="checkbox" name="" id="">
+                <label for="">Añadir contador de vistas</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Datos economicos</legend>
+            <div class="form-col">
+                <label for="precio">Precio</label>
+                <input style="width: 40px;" type="number" name="precio" id="precio" min="0" step="0.01">
+                <span>€</span>
+                <label for="impuestos" style="margin-left: 20px;">Impuestos</label>
+                <select name="" id="">
+                    <option value="0" selected>0%</option>
+                    <option value="4" selected>4%</option>
+                    <option value="10">10%</option>
+                    <option value="21">21%</option>
+                </select>
+                <div class="form-row">
+                    <label>
+                        <input type="radio" name="promocion" value="ninguno"> Ninguno
+                    </label>
+                    <label>
+                        <input type="radio" name="promocion" value="transporte"> Transporte gratis
+                    </label>
+                    <label>
+                        <input type="radio" name="promocion" value="descuento"> Descuento 5%
+                    </label>
+                </div>
+            </div>
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

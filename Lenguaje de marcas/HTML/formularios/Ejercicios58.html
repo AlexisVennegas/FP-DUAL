@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form>input {
+            width: 200px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Rellena tu CV</h3>
+    <form action="enviar.php" method="post">
+
+        <label for="nombre">Nombre</label>
+        <input type="text">
+        <label for="apellidos">apellidos</label>
+        <input type="text">
+        <label for="contraseña">Contraseña</label>
+        <input type="password">
+        <label for="dni">DNI</label>
+        <input type="text">
+        <label style="display: flex; margin-top: 10px;">
+            <label for="file" style="    font-size: 14px; margin-right: 10px;">Incluir mi foto</label>
+            <input style="width: auto !important;" type="file" name="file" id="file">
+        </label>
+
+        <div style="margin-top: 10px;">
+            <input type="checkbox" name="" id="">
+            <label for="terminos">Suscribirme al boletin de novedades</label>
+        </div>
+        <div class="buttons">
+            <input type="submit" value="Guardar cambios">
+            <input type="reset" value="Borrar los datos introducidos">
+        </div>
+    </form>
+</body>
+
+</html>

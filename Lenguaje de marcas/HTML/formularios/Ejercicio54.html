@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-row {
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        }
+
+        .form-row label {
+            width: 250px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Productos Mexicanos de Limpiez "PROLIM"</h1>
+
+<form action="enviar.php" method="post">
+    <div class="form-row">
+        <label for="title">Entrada (eliga solo una linea de productos)</label>
+        <select name="title" id="title">
+            <option value="1" selected>Ninguno</option>
+            <option value="2">Cocina</option>
+            <option value="3">Lavanderia</option>
+            <option value="4">Habitat</option>
+            <option value="5">Albercas</option>
+            <option value="6">Industrial</option>
+        </select>
+    </div>
+
+    <label for="title2">Segundo (puede elegir mas de un producto)</label>
+    <div class="form-row">
+        <select name="title2" id="title2" multiple size="4">
+            <option value="1" selected>Ninguno</option>
+            <option value="2">Tergen (detergente lavaloza neutro uso manual)</option>
+            <option value="3">Spotless (detergente liquido para maquina lavaloza)</option>
+            <option value="4">Track (pastsa multiusos)</option>
+            <option value="5">Triton (Prelavador alcalino liquido)</option>
+            <option value="6">Dinamo (desengrasante emulsificante)</option>
+            <option value="7">Crystal (limpia vidrios)</option>
+        </select>
+    </div>
+
+    <div class="form-row">
+        <label for="title3">Cocina (elija solo un producto)</label>
+        <select name="title3" id="title3">
+            <option value="1" selected>Ninguno</option>
+            <option value="2">Tergen (Detergente lavaloza neutro uso manual)</option>
+            <option value="3">Spotless (Detergente líquido para maquina lavaloza)</option>
+            <option value="4">Track (Pasta Multiusos)</option>
+            <option value="5">Triton (Prelavador alcalino liquido)</option>
+        </select>
+    </div>
+    <div class="buttons">
+        <button type="submit">enviar datos</button>
+        <button type="reset">borrar datos</button>
+    </div>
+    </form>
+</body>
+</html>

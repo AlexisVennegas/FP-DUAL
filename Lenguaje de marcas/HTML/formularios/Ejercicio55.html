@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        form>h1 {
+            text-align: center;
+        }
+
+        form>p {
+            font-weight: bold;
+        }
+     
+    </style>
+
+</head>
+
+<body>
+
+
+    <form action="enviar.php" method="post">
+        <h1>Cuidemos Nuestro Planeta</h1>
+
+        <p>Mi opinion respecto a la contaminacion es: </p>
+
+
+        <textarea name="opinion" id="opinion" cols="30" rows="10"
+            placeholder="No olvides firmar tu comentario."></textarea>
+
+        <div class="buttons">
+            <input type="submit" value="Enviar datos">
+            <input type="reset" value="Borrar datos">
+        </div>
+    </form>
+</body>
+
+</html>
