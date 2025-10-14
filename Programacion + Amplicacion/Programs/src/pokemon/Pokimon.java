@@ -53,10 +53,31 @@ public class Pokimon {
 		
 		}
 
+	public void avanzar(int cantidadAvanzar) {
+		
+		int i = 0;
+		while(i < cantidadAvanzar) {
+			this.caminar();
+			i++;
+		}
+		
+	}
+	public void probar(int numero) {
+		while(numero >= 0) {
+	
+			System.out.println(numero);
+			numero--;
+			probar(numero);
+		}
+	}
+	
+	
+	public boolean esMayor() {
+		return this.ataque >= 18;
+	}
 	
 	public void caminar() {
 
-		
 		if(this.getPuntoCardinal() == 'N') this.ubicacion.setY(this.ubicacion.getY() + 1);
 		if(this.getPuntoCardinal() == 'S') this.ubicacion.setY(this.ubicacion.getY() - 1);
 	}

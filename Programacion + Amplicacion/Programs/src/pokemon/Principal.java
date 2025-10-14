@@ -24,7 +24,7 @@ public class Principal {
 		pokimon1.girarDerecha();
 		System.out.println("---------------------------");
 		pokimon1.mostrarDatos();
-		
+		pokimon1.probar(10);
 		
 	}
 }
