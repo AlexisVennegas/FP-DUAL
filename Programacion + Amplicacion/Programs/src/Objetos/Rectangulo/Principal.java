@@ -1,4 +1,4 @@
-package Objetos1;
+package Objetos.Rectangulo;
 
 public class Principal {
 	public static void main(String[] args) {

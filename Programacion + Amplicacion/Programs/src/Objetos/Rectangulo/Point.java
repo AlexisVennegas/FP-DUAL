@@ -1,4 +1,4 @@
-package Objetos1;
+package Objetos.Rectangulo;
 
 public class Point {
 	public int x = 0;

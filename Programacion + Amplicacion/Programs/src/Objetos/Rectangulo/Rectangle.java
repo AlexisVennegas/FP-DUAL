@@ -1,4 +1,4 @@
-package Objetos1;
+package Objetos.Rectangulo;
 
 public class Rectangle {
 	public int width = 0;
