@@ -3,18 +3,14 @@ package Objetos.Fecha;
 public class Principal {
 
     public static void main(String[] args) {
-        Fecha fecha1 = new Fecha(27, 6, 2001);
-        Fecha fecha2 = new Fecha(11, 12, 2023);
-
+        Fecha fecha1 = new Fecha(1, 12, 2050);
+      
         fecha1.mostrar();
-        fecha2.mostrar();
-
-        System.out.println(
-            "¿Fecha 1 es menor que Fecha 2? " + fecha1.esMenor(fecha2)
-        );
-        System.out.println(
-            "¿Fecha 1 es mayor que Fecha 2? " + fecha1.esMayor(fecha2)
-        );
-        System.out.println("fecha 1 es bisiesto: " + fecha2.esBisiesto());
-    }
+        System.out.println("es bisiesto?: " + fecha1.esBisiesto());
+        System.out.println("dias del mes: " + fecha1.diasMes());
+        fecha1.anterior();
+        fecha1.mostrar();
+        System.out.println("es menor: " + fecha1.esMenor(new Fecha(10, 10, 2005)));
+        System.out.println("es mayor: " + fecha1.esMayor(new Fecha(10, 10, 2005)));
+    }     
 }

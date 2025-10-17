@@ -18,11 +18,12 @@ public class Fecha {
         this.dia = dia;
         this.mes = mes;
         this.anio = anio;
+    	this.validar();
     }
 
     // METODOS
     public boolean esBisiesto() {
-        return (anio % 4 == 0 && anio % 100 != 0) || anio % 400 == 0;
+        return (anio % 4 == 0 && anio % 100 != 0) || (anio % 400 == 0);
     }
 
     public void mostrar() {
@@ -31,47 +32,57 @@ public class Fecha {
     	System.out.println("año: " + this.anio);
     }
     
-    public int diasMes(int mes) {
-        return (mes == 2 && esBisiesto())
-            ? 29
-            : new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }[mes -
-              1];
+    public int diasMes() {
+    	if(this.mes == 2 && esBisiesto()) return 29;
+    	switch (this.mes) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12: {return 31;}
+		case 2:  {return 28;}
+		case 4: 
+		case 6:
+		case 9:
+		case 11: {return 30;}
+    	}
+    	return 0;
     }
 
-    public boolean valida(int dia, int mes, int anio) {
-        return (
-            dia >= 1 &&
-            dia <= diasMes(mes) &&
-            mes >= 1 &&
-            mes <= 12 &&
-            anio >= 1900
-        );
+    private void validar() {    	
+    	if(this.getAnio() < 1900 || this.getAnio() > 2050) this.anio = 1900;
+    	if(this.getMes() < 1 || this.getMes() > 12) this.mes = 1;
+    	if (this.dia < 1 || this.dia > this.diasMes()) dia = 1;
     }
 
     public void siguiente() {
-        if (dia < diasMes(mes)) {
-            dia++;
-        } else if (mes < 12) {
-            dia = 1;
-            mes++;
+        if (this.dia < diasMes()) this.dia++;
+        else if (this.mes < 12) {
+            this.dia = 1;
+            this.mes++;
         } else {
-            dia = 1;
-            mes = 1;
-            anio++;
+            this.dia = 1;
+            this.mes = 1;
+            this.anio++;
         }
+        this.validar();
     }
 
     public void anterior() {
-        if (dia > 1) {
-            dia--;
-        } else if (mes > 1) {
-            dia = diasMes(mes - 1);
-            mes--;
+        if (this.dia > 1) {
+            this.dia--;
+        } else if (this.mes > 1) {
+            this.dia = this.diasMes();
+            this.mes--;
         } else {
-            dia = 31;
-            mes = 12;
-            anio--;
+            this.dia = this.diasMes();
+            this.mes -= this.mes;
+            this.anio--;
+
         }
+        this.validar();
     }
 
     public boolean esIgual(Fecha otraFecha) {
@@ -101,4 +112,26 @@ public class Fecha {
                 this.dia > otraFecha.dia)
         );
     }
+
+    
+    // GETTER AND SETTER
+	public int getDia() {
+		return dia;
+	}
+	public void setDia(int dia) {
+		this.dia = dia;
+	}
+	public int getMes() {
+		return mes;
+	}
+	public void setMes(int mes) {
+		this.mes = mes;
+	}
+	public int getAnio() {
+		return anio;
+	}
+	public void setAnio(int anio) {
+		this.anio = anio;
+	}
+    
 }
