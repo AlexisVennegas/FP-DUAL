@@ -8,10 +8,11 @@ public class Principal {
 		
 		Alumno alexis = new Alumno(32, 23, 32);
 		
+		String pokemon = "pikachi";
 		
 		Profesor profe = new Profesor();
 		
-		profe.ponerNota(alexis);
+		Profesor.ponerNota(alexis);
 		
 		System.out.println("nota 1: " + alexis.getPrimera().getCalificacion());
 		System.out.println("nota 2: " + alexis.getSegunda().getCalificacion());
