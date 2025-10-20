@@ -7,11 +7,17 @@ public class Bicycle {
 	public int gear;
 	public int speed;
 	
+    private int id;
+
+    private static int numberOfBicycles = 0;
+
+	
 	
 	public Bicycle(int startCadence, int startSpeed, int startGear) {
         gear = startGear;
         cadence = startCadence;
         speed = startSpeed;
+        id = ++numberOfBicycles;
     }
 	public Bicycle() {
         gear = 2;
@@ -51,6 +57,11 @@ public class Bicycle {
 	public void frenar(int speed) {
 		this.speed = 0;
 	}
-	
+	public int getID() {
+        return id;
+    }
+	public static int getNumberOfBicycles() {
+	    return numberOfBicycles;
+	}
 
 }
