@@ -1,0 +1,10 @@
+   article p {
+        font-size: xx-large;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    p {
+        font-family: "Courier New";
+        font-style: italic;
+    }
