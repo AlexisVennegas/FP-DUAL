@@ -1,0 +1,33 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+form > label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form > input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+
+    color:  #0a0;
+    background-color: #ff1;
+}
+
+.enviar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}

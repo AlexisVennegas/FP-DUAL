@@ -1,0 +1,23 @@
+body {
+
+    border: 2px dashed black;
+
+    height: auto;
+    width: 80%;
+}
+#iduno {
+    text-align: center;
+    color: #38ff38;
+    
+}
+
+.clase2 {
+    text-align: right;
+    color: #ff3838;
+    margin-right: 30px;
+}
+
+.clase1 {
+    text-align: center;
+    color: #6767ff;
+}
