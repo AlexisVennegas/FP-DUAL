@@ -16,7 +16,9 @@ public class Cesar {
 			letra = texto.charAt(i);
 
 			j = abc.indexOf(letra);
-			if(j ==25) coding += abc.charAt(2);
+		
+			if(letra == ' ') coding += " ";
+			else if(j ==25) coding += abc.charAt(2);
 			else if(j == 24) coding += abc.charAt(1);
 			else if(j == 23) coding += abc.charAt(0);
 			else coding += (abc.charAt(j + 3));
@@ -39,7 +41,9 @@ public class Cesar {
 	
 			j = abc.indexOf(letra);
 		
-			if(j == 0) coding += abc.charAt(27);
+			
+			if (letra == ' ') coding += " ";
+			else if(j == 0) coding += abc.charAt(56);
 			else if (j == 1) coding += abc.charAt(26);
 			else if (j == 2) coding += abc.charAt(25);
 			else coding += abc.charAt(j - 3);
