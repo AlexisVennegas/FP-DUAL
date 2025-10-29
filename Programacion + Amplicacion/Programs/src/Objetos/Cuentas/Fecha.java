@@ -1,4 +1,4 @@
-package Objetos.Fecha;
+package Objetos.Cuentas;
 
 public class Fecha {
 
@@ -173,7 +173,7 @@ public class Fecha {
         bisiestos = totalAnios / 4;
      
         totalDias = diasRestantes1 + (anios * 365) + bisiestos;     
-   
+        System.out.println("la otra chingadera: " + totalDias);
         return totalDias;
     } 
 
