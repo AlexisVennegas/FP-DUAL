@@ -68,3 +68,12 @@ create table trabajador_asociacion(
 	dni CHAR(9),
 	primary key (cif,dni)
 ); 
+
+
+
+create table prueba(
+	dni INT PRIMARY KEY,
+	segsoc INT UNIQUE NOT NULL,
+	campo2 char(9) NOT NULL DEFAULT "000000000",
+	campo3 int
+);
