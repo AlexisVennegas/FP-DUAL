@@ -1,0 +1,13 @@
+
+
+
+.titulosecundario {
+    border-top: 2px dotted blue;
+    border-bottom: 2px solid blue;
+    border-right: 0px solid blue;
+    border-left: 0px solid blue;
+    background-color: #ffffcc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 40px;
+}

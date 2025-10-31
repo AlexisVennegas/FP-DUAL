@@ -1,0 +1,13 @@
+ol:nth-child(1) {
+    list-style-type: none;
+}
+
+ol:nth-child(2) {
+    list-style-type: lower-roman;
+}
+ol:nth-child(3) {
+    list-style-type: upper-latin;
+}
+ol:nth-child(4) {
+    list-style-type: lower-greek    ;
+}

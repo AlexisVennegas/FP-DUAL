@@ -1,0 +1,15 @@
+div {
+    border: 3px dotted black;
+    width: 800px;
+}
+.flotante {
+    font-weight: bold;
+    float: left;
+    font-size: 50px;
+    line-height: 30px;
+    padding: 20px 5px;
+}
+
+span {
+    font-weight: bold;
+}

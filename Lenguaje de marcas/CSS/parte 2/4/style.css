@@ -1,0 +1,19 @@
+section {
+    border: 3px dotted black;
+    padding: 3px;
+    width: 700px;
+}
+div {
+    border: 2px solid blue;
+    background-color: yellow;
+    margin: 20px 0;
+    padding: 0px 10px 40px 30px;
+    width: 600px;
+}
+p {
+    background-color: blue;
+    color: white;
+    padding: 4px;
+    border-left: 5px solid red;
+    border-right: 5px solid red;
+}
