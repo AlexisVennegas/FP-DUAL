@@ -70,11 +70,12 @@ public class Principal {
 	}
 	public static void main(String[] args) {
 		
-		Usuario usuario1 = new Usuario(1, "Alexis", 100);
-		Usuario usuario2 = new Usuario(2, "Ana", 500);
-		Usuario usuario3 = new Usuario(3, "Noe", 200);
+		Usuario usuario1 = new Usuario(1, "Noe", 100);
+		Usuario usuario2 = new Usuario(2, "Karla", 500);
+		Usuario usuario3 = new Usuario(3, "Alexia", 200);
 		
-		menu();
+		System.out.println(usuario1.calcularDigitos());
+		System.out.println(usuario1.calcularletrasIngles());
 		
 	}
 }

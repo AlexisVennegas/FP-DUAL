@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: #ddffde;
+    width: 400px;
+    height: 300px;
+    border: 2px solid green;
+    margin: 50px auto;
+    position: relative;
+}
+section > p {
+    color: green;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.class1 {
+    background-color: #ffdddc;
+    color: red;
+    border: 2px solid red;
+    width: 150px;   
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 5px 3px;
+}
+.class2 {
+    background-color: #ddddff;
+    color: blue;
+    border: 2px solid blue;
+    width: 150px;
+    position:absolute;
+    bottom: 30px;
+    left: 30px;
+    padding: 5px 3px ;
+}

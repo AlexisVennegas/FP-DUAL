@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+
+    display: flex;
+    margin: 20px auto;
+    width: fit-content;
+}
+ul > li {
+    background-color: black;
+    color: white;
+    margin: 0px 3px;
+    padding: 3px 20px;
+    transition: .6s;
+    border-left: 10px solid #666666;
+
+}
+
+ul > li:hover {
+    background-color: #003366;
+    border: 2px solid #99CC00;
+    cursor: pointer;
+    color: #99CC00;
+    transition: .6s;
+}
+

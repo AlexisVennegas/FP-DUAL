@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    border: 1px solid red;
+    width: 400px;
+    height: 300px;
+    margin: 100px auto;
+    position: relative;
+}
+
+h1 {
+    color: red;
+    background-color: #ffdbd8;
+    border: 3px solid red;
+    width: 130px;
+    text-align: center;
+    float: right;
+    margin: 25px ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p {
+    background-color: #ddddff;
+    border: 2px solid #312b6d;
+    color: #171658;
+    float: left;
+    width: 240px;
+    position: absolute;
+    bottom: 0;
+    margin: 50px;
+    padding: 2px;
+}   

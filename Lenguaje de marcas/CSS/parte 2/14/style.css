@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    background-color: #ffc0cb;
+    border: 3px solid rgb(163, 160, 160);
+    margin: 20px auto;
+    width: 500px;
+    padding: 50px;
+    height: 300px;
+}
+label {
+    color: blue;
+}
+input {
+    margin: 10px 0 ;
+    width: 200px
+}
+textarea {
+    margin: 10px 0 ;
+    width: 300px;
+    height: 100px;
+}
+input[type="submit"] {
+   color: red;
+   background-color: rgb(177, 175, 175);
+   border: 2px solid white;
+   width: 70px;
+    height: 25px;
+    margin-left: 80px;
+}

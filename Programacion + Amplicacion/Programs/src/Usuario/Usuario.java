@@ -18,8 +18,36 @@ public class Usuario {
 		if(this.id >= 1 && this.id <= 10) this.saldo += (this.saldo * porcentaje) / 100; 
 	}
 
-	
-	
+	public boolean contieneA() {
+		if(this.getNombre() == null) return false;
+		return this.getNombre().charAt(0) == 'A';
+	}
+	public boolean compararNombres(String otroNombre) {
+		int i = 0;
+		while(i < this.nombre.length()) {
+		if(this.nombre.toLowerCase().charAt(i) != otroNombre.toLowerCase().charAt(i)) return false;
+		i++;
+		}
+		return true;
+	}
+	public int calcularDigitos() {
+	    int digitos = 0;
+	    int i = 0;
+	    while(i < this.nombre.length()) {
+	    	if(this.nombre.charAt(i) >= '0' && this.nombre.charAt(i) <= '9') digitos++;
+	    	i++;
+	    }
+	    return digitos;
+	}
+	public int calcularletrasIngles() {
+		int digitos = 0;
+		int i = 0;
+		while(i < this.nombre.length()) {
+			if(this.nombre.toLowerCase().charAt(i) >= 'a' && this.nombre.toLowerCase()p.charAt(i) <= 'z') digitos++;
+			i++;
+		}
+		return digitos;
+	}
 	// GETTERS ANDS SETTERS 
 	public int getId() {
 		return id;
