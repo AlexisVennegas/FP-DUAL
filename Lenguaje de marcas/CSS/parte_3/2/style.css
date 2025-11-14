@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+table {
+	margin: 100px auto;
+	background-color: #e8e3ce;
+	border: 2px dotted black;
+	border-collapse: collapse;
+}
+
+thead > tr {
+	color: red;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+}
