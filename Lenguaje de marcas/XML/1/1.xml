@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Pedidos>
+<Pedido id="1001" fecha="2024-06-15">
+    <Cliente>Juan Pérez</Cliente>
+    <Direccion>Calle Mayor 30, 28013 Madrid</Direccion>
+    <ListaProductos>
+        <Producto cantidad="1">
+            <Nombre>Hamburguesa Clásica</Nombre>
+            <Precio>8.50</Precio>
+        </Producto>
+        <Producto cantidad="2">
+            <Nombre>Coca Cola</Nombre>
+            <Precio>2.50</Precio>
+        </Producto>
+        <Producto cantidad="1">
+            <Nombre>Patatas Fritas</Nombre>
+            <Precio>3.00</Precio>
+        </Producto>
+    </ListaProductos>
+    <Total>16.50</Total>
+</Pedido>
+</Pedidos>

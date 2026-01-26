@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica LM</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- CodeMirror 6 UMD (FUNCIONA SIN MODULE) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.css">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/xml/xml.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/javascript/javascript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/css/css.js"></script>
+</head>
+<body>
+
+<section class="container">
+
+    <!-- COLUMNA IZQUIERDA -->
+    <div class="col izquierda">
+        <h1>Ejercicio 1</h1>
+        <p>Escribe HTML en el editor y se ejecutará automáticamente.</p>
+
+        <h2>Vista previa</h2>
+        <iframe id="preview"></iframe>
+    </div>
+
+ <!-- COLUMNA CENTRAL -->
+<div class="col centro">
+    <h2>Editor HTML</h2>
+    <textarea id="editor-html"></textarea>
+
+    <h2>Editor CSS</h2>
+    <textarea id="editor-css"></textarea>
+</div>
+
+    <!-- COLUMNA DERECHA -->
+    <div class="col derecha">
+        <h2>Chuleta PDF</h2>
+        <embed src="../Documents/chuleta.pdf" type="application/pdf" class="pdf">
+    </div>
+
+</section>
+
+<script src="../js/app.js"></script>
+<script>
+    // EDITOR HTML
+    var editorHTML = CodeMirror.fromTextArea(document.getElementById("editor-html"), {
+        mode: "htmlmixed",
+        lineNumbers: true,
+        tabSize: 2
+    });
+
+    // EDITOR CSS
+    var editorCSS = CodeMirror.fromTextArea(document.getElementById("editor-css"), {
+        mode: "css",
+        lineNumbers: true,
+        tabSize: 2
+    });
+
+    // ACTUALIZAR VISTA PREVIA AUTOMÁTICAMENTE
+    function actualizarPreview() {
+        const html = editorHTML.getValue();
+        const css = `<style>${editorCSS.getValue()}</style>`;
+        const iframe = document.getElementById("preview");
+
+        iframe.contentDocument.open();
+        iframe.contentDocument.write(css + html);
+        iframe.contentDocument.close();
+    }
+
+    editorHTML.on("change", actualizarPreview);
+    editorCSS.on("change", actualizarPreview);
+</script>
+
+</body>
+</html>

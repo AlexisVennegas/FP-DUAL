@@ -10,10 +10,20 @@ table {
 	border: 2px dotted black;
 	border-collapse: collapse;
 }
+.td-red{
+	color:red;
+}
+
 
 thead > tr {
-	color: red;
 	font-size: 30px;
 	font-weight: bold;
 	text-align: center;
+}
+.td-line {
+	border: 1px solid black;
+}
+p {
+	font-size: 30px;
+	width: 1200px;
 }

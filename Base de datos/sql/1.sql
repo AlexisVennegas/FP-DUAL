@@ -1,6 +1,7 @@
 DROP DATABASE ongs;
 CREATE DATABASE ongs;
 USE ongs;
+
 CREATE TABLE asociacion(
   cif CHAR(9) PRIMARY KEY,
   denominacion VARCHAR(200) NOT NULL,
@@ -17,7 +18,7 @@ create table socio(
 	provincia varchar(11) NOT NULL ,
 	fecha_alta date NOT NULL,
 	cuota_mensual float(6,2) NOT NULL,
-        aportacion_anual float(6,2) NOT NULL, 
+    aportacion_anual float(6,2) NOT NULL, 
 	CONSTRAINT pk_socio primary key (dni)
 );
 
