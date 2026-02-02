@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tablaperiodica
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="tablaperiodica.xsd"
+>
+ <elemento num-atomico="6" simbolo="C">carbono</elemento>
+ <elemento num-atomico="17" simbolo="Cl">cloro</elemento>
+ <elemento num-atomico="56" simbolo="Ba" radiactivo="sí">bario</elemento>
+ <elemento num-atomico="34" simbolo="Se"></elemento>
+</tablaperiodica>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="empleados.xsd">
+    <ficha numero="1">
+       <nombre telefono="914824023">María José Pérez</nombre>
+        <edad>22</edad>
+    </ficha>
+    <ficha numero="2">
+        <nombre telefono="652142214">Pablo Gil Paz</nombre>
+        <edad>23</edad>
+    </ficha>
+    <ficha numero="3">
+        <nombre telefono="962140056">Paula Moreno Serrano</nombre>
+        <edad>23</edad>
+    </ficha>
+</empleados>
