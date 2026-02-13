@@ -11,8 +11,8 @@ class CuentaTest {
 
 	@Test
 	void testSetSaldo() {
-		fail("Not yet implemented");
-	}
+		fail("Not yet implemented" + "\n");
+	}	
 
 	@Test
 	void testIngresarDinero() {
