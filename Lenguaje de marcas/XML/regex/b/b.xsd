@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="soloDigitos">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{8}[A-Z]"/>
+        </xs:restriction>    
+    </xs:simpleType>
+</xs:schema>    
+    
+    
+<!-- b) solo puede contener 8 dígitos y después una letra mayúscula del alfabeto inglés. -->
