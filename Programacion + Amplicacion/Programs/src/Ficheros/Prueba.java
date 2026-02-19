@@ -33,6 +33,8 @@ public class Prueba {
 		String 	nombre = "",
 				apellidos = "";
 		
+	
+		
 		while(true) {
 			
 			System.out.println("introduce numero de exp");

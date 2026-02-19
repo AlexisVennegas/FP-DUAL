@@ -31,6 +31,7 @@ public class Expedientes implements Comparable<Expedientes>{
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+		syso
 	}
 
 	public String getApellidos() {

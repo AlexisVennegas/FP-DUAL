@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="soloDigitosMenosI-O-U">
+        <xs:restriction base="xs:string">
+        <xs:pattern value="[a-zA-Z-[IOU]]{8}">
+        </xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="texto" type="soloDigitosMenosI-O-U"></xs:element>
+</xs:schema>
+
+
+<!-- c) solo puede contener 8 dígitos y después una letra mayúscula del alfabeto inglés salvo la I, la
+O y la U. -->
