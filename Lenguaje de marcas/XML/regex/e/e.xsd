@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="patronE">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-zA-Z0-9]{1,16}"/>
+        </xs:restriction>
+
+    </xs:simpleType>
+
+
+</xs:schema>
+
+
+
+<!-- e) solo puede contener letras del alfabeto inglés y dígitos (mínimo 1, máximo 16). -->

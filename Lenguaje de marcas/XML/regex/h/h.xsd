@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:simpleType name="patronH">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="(?=(?:.*[aeiou]){2,})[A-Za-z]+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    </xs:schema>
+
+
+
+
+
+
+<!-- h) solo puede contener letras y al menos tiene dos vocales minúsculas del alfabeto inglés. -->
