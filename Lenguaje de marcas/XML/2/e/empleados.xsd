@@ -18,7 +18,6 @@
                             <xs:element name="edad" type="xs:integer"/>
                         </xs:sequence>
                         <xs:attribute name="numero" type="xs:integer" use="required"/>
-                        
                     </xs:complexType>
 
                 </xs:element>

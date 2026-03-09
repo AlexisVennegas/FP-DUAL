@@ -1,0 +1,6 @@
+<!ELEMENT coches (coches*)>
+<!ELEMENT coche  (marca, modelo, precio)>
+<!ATTLIST coche matricula CDATA #REQUIRED >
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

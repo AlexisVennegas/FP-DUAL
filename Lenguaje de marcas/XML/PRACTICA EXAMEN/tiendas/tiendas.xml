@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<tienda
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="tienda.xsd">
+    <smartphone  codigo="ABC1234">
+        <marca>iphone</marca>
+        <modelo>17</modelo>
+        <precio>1500</precio>
+    </smartphone>
+</tienda>

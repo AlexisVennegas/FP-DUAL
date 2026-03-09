@@ -1,0 +1,6 @@
+<!ELEMENT tienda (smartphone+) >
+<!ELEMENT smartphone (marca,modelo, precio)>
+<!ATTLIST smartphone codigo CDATA  #REQUIRED>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>

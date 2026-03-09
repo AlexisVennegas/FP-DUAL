@@ -1,0 +1,10 @@
+<!ELEMENT biblioteca (libro+)>
+<!ELEMENT libro (titulo, autor, anio, precio)>
+<!ATTLIST libro isbn CDATA #REQUIRED >
+<!ATTLIST libro categoria CDATA #IMPLIED>
+<!ELEMENT titulo (#PCDATA) >
+<!ELEMENT autor (nombre, nacionalidad) >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT nacionalidad (#PCDATA) >
+<!ELEMENT anio (#PCDATA) >
+<!ELEMENT precio (#PCDATA) >

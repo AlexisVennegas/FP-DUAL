@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE biblioteca SYSTEM "biblioteca.dtd"> -->
+
+<biblioteca
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+    xsi:noNamespaceSchemaLocation="biblioteca.xsd">
+    <libro isbn="12345" categoria="novela">
+        <titulo>El Quijote</titulo>
+        <autor>
+            <nombre>Cervantes</nombre>
+            <nacionalidad>España</nacionalidad>
+        </autor>
+        <anio>1605</anio>
+        <precio>19.99</precio>
+    </libro>
+</biblioteca>

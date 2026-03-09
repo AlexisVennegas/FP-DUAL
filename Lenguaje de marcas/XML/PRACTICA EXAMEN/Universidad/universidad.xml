@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE universidad SYSTEM "universidad.dtd" > -->
+<universidad
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+    xsi:noNamespaceSchemaLocation="universidad.xsd"
+>
+    
+    <alumno matricula="ALU1234">
+        <nombre>Carlos</nombre>
+        <carrera>Informatica</carrera>
+        <nota>8.5</nota>
+    </alumno>
+
+    <alumno matricula="ALU5678">
+        <nombre>Maria</nombre>
+        <carrera>Matematicas</carrera>
+        <nota>9.2</nota>
+    </alumno>
+
+</universidad>

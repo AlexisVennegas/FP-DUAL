@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<coches
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="coches.xsd"
+>
+	<coche matricula="1234-ABC">
+    <marca>Nissan</marca>
+    <modelo>123C</modelo>
+    <precio>euros 130</precio>
+  </coche>
+</coches>

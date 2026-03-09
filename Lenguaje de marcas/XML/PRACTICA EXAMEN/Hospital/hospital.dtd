@@ -1,0 +1,6 @@
+<!ELEMENT hospital (paciente+) >
+<!ELEMENT paciente (nombre, edad, diagnostico) >
+<!ATTLIST paciente id CDATA #REQUIRED >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT edad (#PCDATA) >
+<!ELEMENT diagnostico (#PCDATA) >

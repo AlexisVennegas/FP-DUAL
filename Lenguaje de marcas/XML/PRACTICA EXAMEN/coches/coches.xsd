@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="coches">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="coche" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="marca" >
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[A-Za-z ]+" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="modelo" >
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:pattern value="[A-Za-z0-9 ]+" />
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                            
+                        <xs:element name="precio" />
+                    </xs:sequence>
+                    <xs:attribute name="matricula">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                 <xs:pattern value="[0-9]{4}-[A-Z]{3}" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:complexType>
+              
+            </xs:element>
+        </xs:sequence>
+       
+    </xs:complexType>
+</xs:element>
+
+
+
+</xs:schema>

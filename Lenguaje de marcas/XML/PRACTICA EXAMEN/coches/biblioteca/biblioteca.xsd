@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="biblioteca">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="libro" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:minLength value="3"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                             <xs:element name="autor">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre">
+                                        
+                                        </xs:element>
+                                        <xs:element name="nacionalidad">
+                                           
+                                        </xs:element>
+                                    </xs:sequence>
+                                     </xs:complexType>    
+                                </xs:element> 
+                                  <xs:element name="anio">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:integer">
+                                        <xs:maxInclusive value="2024"></xs:maxInclusive>
+                                        <xs:minExclusive value="1998"></xs:minExclusive>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                              <xs:element name="precio">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:decimal">
+                                        <!-- ni idea -->
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                                
+                         
+                          
+                          
+                        
+                        </xs:sequence>
+                            <xs:attribute name="isbn" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer">
+                                                <xs:pattern value="[0-9]{4}" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                    <xs:attribute name="categoria" use="optional">
+                                        <xs:simpleType>
+                                            <xs:restriction  base="xs:string">
+                                                <xs:pattern value="[A-Z][a-z]+" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                                    
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+   </xs:element>
+</xs:schema>

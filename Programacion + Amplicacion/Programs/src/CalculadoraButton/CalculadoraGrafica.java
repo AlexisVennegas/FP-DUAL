@@ -13,6 +13,8 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
+import ventana.Buttons.*;
+
 
 public class CalculadoraGrafica extends JFrame {
 	private double primerNumero;
@@ -25,9 +27,9 @@ public class CalculadoraGrafica extends JFrame {
 	private JPanel contentPane;
 	private JTextField pantalla;
 
-	/**
-	 * Launch the application.
-	 */
+	
+
+
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE hospital SYSTEM "hospital.dtd" > -->
+<hospital
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="hospital.xsd"
+>
+    <paciente id="PAC123">
+        <nombre>Alexis</nombre>
+        <edad>24</edad>
+        <diagnostico>Feliz</diagnostico>
+    </paciente>
+        <paciente id="PAC123">
+        <nombre>Erick</nombre>
+        <edad>24</edad>
+        <diagnostico>triste</diagnostico>
+    </paciente>
+</hospital>

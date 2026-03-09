@@ -1,0 +1,6 @@
+<!ELEMENT universidad (alumno+)>
+<!ELEMENT alumno (nombre, carrera, nota)>
+<!ATTLIST alumno matricula CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT carrera (#PCDATA)>
+<!ELEMENT nota (#PCDATA) >

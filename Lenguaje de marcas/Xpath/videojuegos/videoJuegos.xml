@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<videojuegos>
+<videojuegos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="videoJuegos.xsd">
         <videojuego anyo="2011">
         <titulo>Minecraft</titulo>
         <genero>Sandbox</genero>
