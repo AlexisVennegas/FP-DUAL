@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="universidad">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="estudiante">
+                <xs:complexType>
+                    <xs:sequence>
+                        <!-- nombre -->
+                        <xs:element name="nombre">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:minLength value="3"></xs:minLength>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- carrera -->
+                        <xs:element name="carrera">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <!-- ni idea -->
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- edad -->
+                        <xs:element name="edad">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:integer">
+                                    <xs:minInclusive value="16"></xs:minInclusive>
+                                    <xs:maxExclusive value="99"></xs:maxExclusive>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <!-- notas -->
+                         <xs:element name="notas">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="nota">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:integer"> 
+                                                <!-- ni idea -->
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                         </xs:element>
+                         
+                    </xs:sequence>
+                    <!-- primer atributo -->
+                    <xs:attribute name="id">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:integer">
+                                <xs:pattern value="[0-9]{2}"></xs:pattern>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <!-- seguindo atributo -->
+                     <xs:attribute name="tipo">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:minLength value="3"></xs:minLength>
+                            </xs:restriction>
+                        </xs:simpleType>
+                     </xs:attribute>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>

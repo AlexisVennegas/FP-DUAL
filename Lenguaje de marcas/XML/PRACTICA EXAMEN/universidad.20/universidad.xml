@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE universidad SYSTEM "universidad.dtd" > -->
+<universidad
+
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+    xsi:noNamespaceSchemaLocation="universidad.xsd">
+    <estudiante id="12" tipo="pendejo">
+        <nombre>Alexis</nombre>
+        <carrera>informatica</carrera>
+        <edad>17</edad>
+        <notas>
+            <nota>8.5</nota>
+            <nota>7.5</nota>
+        </notas>
+    </estudiante>
+      <estudiante id="12" tipo="pendejo">
+        <nombre>Carlos</nombre>
+        <carrera>medicina</carrera>
+        <edad>98</edad>
+        <notas>
+            <nota>8.5</nota>
+             <nota>7.5</nota>
+        </notas>
+    </estudiante>
+</universidad>

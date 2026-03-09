@@ -1,0 +1,9 @@
+<!ELEMENT universidad (estudiante+) >
+<!ELEMENT estudiante (nombre, carrera,edad,notas) >
+<!ATTLIST estudiante id CDATA #REQUIRED >
+<!ATTLIST estudiante tipo CDATA #IMPLIED >
+<!ELEMENT nombre (#PCDATA) >
+<!ELEMENT carrera (#PCDATA) >
+<!ELEMENT edad (#PCDATA) >
+<!ELEMENT notas (nota+) >
+<!ELEMENT nota (#PCDATA) >
