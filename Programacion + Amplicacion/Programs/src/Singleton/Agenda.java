@@ -27,6 +27,7 @@ public class Agenda {
 	private String fecha = "";
 	private String id = "";
 	private JTextField txtId;
+	private JTextField textResultLabel;
 	
 
 	/**
@@ -66,6 +67,12 @@ public class Agenda {
 		frame.getContentPane().add(nombreInput);
 		nombreInput.setColumns(10);
 		
+		textResultLabel = new JTextField();
+		textResultLabel.setBounds(146, 222, 262, 20);
+		frame.getContentPane().add(textResultLabel);
+		textResultLabel.setColumns(10);
+		
+		
 		JLabel lblNewLabel = new JLabel("Nombre");
 		lblNewLabel.setBounds(134, 34, 63, 21);
 		frame.getContentPane().add(lblNewLabel);
@@ -96,7 +103,7 @@ public class Agenda {
 		txtId = new JTextField();
 		txtId.setText("id");
 		txtId.setColumns(10);
-		txtId.setBounds(171, 222, 86, 21);
+		txtId.setBounds(31, 222, 86, 21);
 		frame.getContentPane().add(txtId);
 		
 		JButton btnNewButton = new JButton("Insert");
@@ -107,6 +114,7 @@ public class Agenda {
 				email = emailInput.getText();
 				fecha = fechaInput.getText();
 				prueba.insertData(nombre, telefono, email, fecha);
+				prueba.seedAgenda();
 			}
 		});
 		btnNewButton.setBounds(31, 188, 89, 23);
@@ -127,6 +135,15 @@ public class Agenda {
 		frame.getContentPane().add(btnUpdate);
 		
 		JButton btnDlete = new JButton("Delete");
+		btnDlete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				id = txtId.getText();
+				int result = prueba.deleteData(id);
+					if(result != 0) {
+					textResultLabel.setText("columna eliminada correctamente");
+				}
+			}
+		});
 		btnDlete.setBounds(319, 188, 89, 23);
 		frame.getContentPane().add(btnDlete);
 		
@@ -135,6 +152,7 @@ public class Agenda {
 		lblEmail = new JLabel("email");
 		lblEmail.setBounds(134, 111, 63, 21);
 		frame.getContentPane().add(lblEmail);
+		
 		
 		
 	}
