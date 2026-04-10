@@ -9,16 +9,25 @@ public class RutinaEjercicio {
 	
 	private String nombreEjercicio;
     private String grupoMuscular;   
+    private Long id_usuario;
 	
 	
-	public RutinaEjercicio(Long id, Long id_rutina, Long id_ejercicio, Long orden, String nombreEjercicio) {
+	public RutinaEjercicio(Long id, Long id_rutina, Long id_ejercicio, Long orden, String nombreEjercicio, Long id_usuario) {
 		super();
 		this.id = id;
 		this.id_rutina = id_rutina;
 		this.id_ejercicio = id_ejercicio;
 		this.orden = orden;
 		this.nombreEjercicio = nombreEjercicio;
+		this.id_usuario = id_usuario;
 	}
+	public Long getId_usuario() {
+		return this.id_usuario;
+	}
+	public void setId_usuario(Long id_usuario) {
+		this.id_usuario = id_usuario;
+	}
+	
 	
 	public RutinaEjercicio() {
 		super();

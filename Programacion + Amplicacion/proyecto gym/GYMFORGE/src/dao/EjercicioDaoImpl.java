@@ -54,6 +54,24 @@ public class EjercicioDaoImpl implements IDAO<Long, Ejercicio> {
 				if(rs.next()) j = mapearEjercicio(rs);
 				else 		  throw new DAOException(TipoException.ELEMENTO_NO_ENCONTRADO);
 			} 
+		} catch (SQLException e) {
+	    	  throw new DAOException(TipoException.EXCEPCION_SQL);
+	    }
+		
+		return j;
+	}
+
+	public Ejercicio findByName(String key) throws DAOException {
+		System.out.println(key);
+		String sql = "SELECT * FROM EJERCICIO WHERE NOMBRE = ?";
+		Ejercicio j = null;
+		try (PreparedStatement pstm = Singleton.getInstance().prepareStatement(sql)) {
+			pstm.setString(1, key);
+			
+			try (ResultSet rs = pstm.executeQuery()){
+				if(rs.next()) j = mapearEjercicio(rs);
+				else 		  throw new DAOException(TipoException.ELEMENTO_NO_ENCONTRADO);
+			} 
 		      
 			
 		} catch (SQLException e) {
@@ -63,8 +81,9 @@ public class EjercicioDaoImpl implements IDAO<Long, Ejercicio> {
 		return j;
 	}
 
-	@Override
-	public void create(Ejercicio item) throws DAOException {
+
+	
+	public Long createReturnId(Ejercicio item) throws DAOException {
 		String sql = "INSERT INTO EJERCICIO (NOMBRE, GRUPO_MUSCULAR, DESCRIPCION, IMAGEN) VALUES (?, ?, ?, ?)";
 		try (PreparedStatement pstm = Singleton.getInstance().prepareStatement(sql)) {
 			pstm.setString(1, item.getNombre());
@@ -78,7 +97,7 @@ public class EjercicioDaoImpl implements IDAO<Long, Ejercicio> {
 		} catch (SQLException sqle) {
 			 new DAOException(TipoException.EXCEPCION_SQL);
 		} 
-		
+		return (long) Statement.RETURN_GENERATED_KEYS;
 	}
 
 	@Override
@@ -114,6 +133,12 @@ public class EjercicioDaoImpl implements IDAO<Long, Ejercicio> {
 			throw new DAOException(TipoException.EXCEPCION_SQL);
 		}
 		
+		
+	}
+
+	@Override
+	public void create(Ejercicio item) throws DAOException {
+		// TODO Auto-generated method stub
 		
 	}
 

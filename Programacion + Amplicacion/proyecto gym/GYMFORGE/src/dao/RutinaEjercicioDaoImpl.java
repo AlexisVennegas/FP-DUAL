@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import conexion.Singleton;
+import modelo.Ejercicio;
 import modelo.Rutina;
 import modelo.RutinaEjercicio;
 import modelo.Usuario;
@@ -42,33 +43,30 @@ public class RutinaEjercicioDaoImpl implements IDAO<Long, RutinaEjercicio>{
 		return r;
 	}
 
-	public List<RutinaEjercicio> findByRutina(Long idRutina) throws DAOException {
+	public Rutina findRutinaByUsuario(Long id_usuario) throws DAOException {
 	  
-	    String sql = "SELECT re.*, e.nombre AS nombre_ejercicio " +
-	                 "FROM RUTINA_EJERCICIO re " +
-	                 "JOIN EJERCICIO e ON re.id_ejercicio = e.id " +
-	                 "WHERE re.id_rutina = ? " +
-	                 "ORDER BY re.orden ASC";
-
-	    List<RutinaEjercicio> lista = new ArrayList<>();
-
-	
+	    String sql = "SELECT * FROM RUTINA WHERE ID_USUARIO = ?";
+	    Rutina r = new Rutina();
 	    try (PreparedStatement pstm = Singleton.getInstance().prepareStatement(sql)) {
-	        
-	        pstm.setLong(1, idRutina);
-
-	        try (ResultSet rs = pstm.executeQuery()) {
-	            while (rs.next()) {
-	          
-	                RutinaEjercicio re = mapearRutina(rs);
-	                lista.add(re);
-	            }
-	        }
-	    } catch (SQLException e) {
-	    	throw new DAOException(TipoException.EXCEPCION_SQL);
+			pstm.setLong(1, id_usuario);
+			
+			try (ResultSet rs = pstm.executeQuery()){
+				if(rs.next()) {
+					r.setNombre(rs.getString("nombre"));
+					r.setId_usuario(rs.getLong("id_usuario"));
+					r.setObjetivo(rs.getString("objetivo"));
+				}
+				else 		  throw new DAOException(TipoException.ELEMENTO_NO_ENCONTRADO);
+			} 
+		      
+			
+		} catch (SQLException e) {
+	    	  throw new DAOException(TipoException.EXCEPCION_SQL);
 	    }
-	    return lista;
+		
+		return r;
 	}
+
 
 	
 	
@@ -76,17 +74,48 @@ public class RutinaEjercicioDaoImpl implements IDAO<Long, RutinaEjercicio>{
 	public RutinaEjercicio findOne(Long key) throws DAOException {
 		return null;
 	}
-	
 
+	public List<Ejercicio> mostrarEjerciciosDeUnaRutina(Usuario usuario, Rutina rutina){
+		List<Ejercicio> lista = new java.util.ArrayList<>();
+		
+	    String sql = "SELECT e.* FROM ejercicio e " +
+	                 "INNER JOIN rutina_ejercicio re ON e.id = re.id_ejercicio " +
+	                 "WHERE re.id_rutina = ? AND re.id_usuario = ?";
+	    
+	    try (PreparedStatement pstm = Singleton.getInstance().prepareStatement(sql)) {
+	           
+	    		pstm.setLong(1, rutina.getId());
+	    		pstm.setLong(2, usuario.getId());
+	           
+	    		ResultSet rs = pstm.executeQuery();
+	           
+	           while (rs.next()) {
+	               Ejercicio ej = new Ejercicio();
+	               ej.setId(rs.getLong("id"));
+	               ej.setNombre(rs.getString("nombre"));
+	               ej.setGrupo_muscular(rs.getString("grupo_muscular"));
+	               ej.setDescripcion(rs.getString("descripcion"));
+	               ej.setImagen(rs.getString("imagen"));
+	               lista.add(ej);
+	           }
+	           
+	       }  catch (SQLException sqle) {
+				throw new DAOException(TipoException.EXCEPCION_SQL);
+	       }
+	       
+	       return lista;
+	}
 	
 
 	@Override
 	public void create(RutinaEjercicio item) throws DAOException {
-		String sql = "INSERT INTO RUTINA_EJERCICIO (ID_RUTINA,ID_EJERCICIO,ORDEN) VALUES (?,?,?)";
+		System.out.println("aqui estamos en el dao" + item);
+		String sql = "INSERT INTO RUTINA_EJERCICIO (ID_RUTINA,ID_EJERCICIO,ORDEN, ID_USUARIO) VALUES (?,?,?,?)";
 		try (PreparedStatement pstm = Singleton.getInstance().prepareStatement(sql)) {
 			pstm.setLong(1, item.getId_rutina());
 			pstm.setLong(2, item.getId_ejercicio());
 			pstm.setFloat(3, item.getOrden());
+			pstm.setLong(4, item.getId_usuario());
 			
 			int i = pstm.executeUpdate();
 			
@@ -97,6 +126,8 @@ public class RutinaEjercicioDaoImpl implements IDAO<Long, RutinaEjercicio>{
 		
 	}
 
+	
+	
 	@Override
 	public void update(RutinaEjercicio item) throws DAOException {
 	   
@@ -131,6 +162,12 @@ public class RutinaEjercicioDaoImpl implements IDAO<Long, RutinaEjercicio>{
 		}
 		
 		
+	}
+
+	@Override
+	public Long createReturnId(RutinaEjercicio item) throws DAOException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

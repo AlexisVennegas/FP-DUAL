@@ -70,7 +70,28 @@ public class UsuarioDaoImpl implements IDAO<Long, Usuario>{
 	    return usuario;
 	}
 	
-	
+	public Usuario findOneByEmail(String email, String password) throws DAOException{
+		String sql = "SELECT * FROM USUARIOS WHERE CORREO = ? AND PASSWORD = ?";
+		Usuario u = null;
+		
+		try (PreparedStatement pstm = Singleton.getInstance().prepareStatement(sql)) {
+	        
+	        pstm.setString(1, email);
+	        pstm.setString(2, password);
+	        
+	        try (ResultSet rs = pstm.executeQuery()) {
+	        	
+	            if (rs.next()) 	u = mapearUsuario(rs);
+	            else 			throw new DAOException(TipoException.ELEMENTO_NO_ENCONTRADO);
+	        }
+	        
+	    } catch (SQLException e) {
+	    	  //throw new DAOException(TipoException.EXCEPCION_SQL);
+	    	  return null;
+	    }
+	      
+	    return u;
+	}
 
 	@Override
 	public void create(Usuario item) throws DAOException {
@@ -132,6 +153,12 @@ public class UsuarioDaoImpl implements IDAO<Long, Usuario>{
 			throw new DAOException(TipoException.EXCEPCION_SQL);
 		}
 		
+	}
+
+	@Override
+	public Long createReturnId(Usuario item) throws DAOException {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	

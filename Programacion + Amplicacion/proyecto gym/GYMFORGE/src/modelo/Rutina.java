@@ -1,6 +1,6 @@
 package modelo;
 
-public class Rutina {
+public class Rutina  {
 	
 	
 	// ATRIBUTOS
@@ -29,7 +29,7 @@ public class Rutina {
 
 
 	public Long getId() {
-		return id;
+		return this.id;
 	}
 
 

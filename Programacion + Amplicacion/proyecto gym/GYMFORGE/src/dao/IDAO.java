@@ -8,6 +8,8 @@ public interface IDAO<K, T> {
 
 	T findOne(K key) throws DAOException;
 
+	Long createReturnId(T item) throws DAOException;
+	
 	void create(T item) throws DAOException;
 
 	void update(T item) throws DAOException;
