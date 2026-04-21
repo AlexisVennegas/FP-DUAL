@@ -18,6 +18,6 @@ public class Pulgadas {
 
         System.out.println("centrimetros: " + resultado);
 
-        teclado.close();
+        teclado.close(); 
     }
 }
