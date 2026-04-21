@@ -1,0 +1,1 @@
+TICKET: Usuario [12345678A] ha alquilado el juego 'The Legend of Zelda' (Plataforma: Switch) por 59.99€
