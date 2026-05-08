@@ -7,6 +7,6 @@ public class p10 {
 		// 10. Invertir el signo de un número usando UnaryOperator<Double>.
 		
 		UnaryOperator<Double> invertir = x -> x * -1;
-		System.out.println(invertir.apply((double) -10));
+		System.out.println(invertir.apply(2342.2));
 	}
 }

@@ -18,7 +18,6 @@ public class p01 {
 					new Empleado("Neil Peart","Music","Hamilton")
 					);
 
-			empleados.stream().distinct().forEach();
 			
 		}
 }
