@@ -8,12 +8,12 @@ public class FIBONACCI {
 		if (numero < 0) return -1;
 		
 	
-		return enesimaFibo(numero - 1) + (numero + 2);
+		return enesimaFibo(numero - 2) + (numero - 1);
 		
 		
 		
 	}
 	public static void main(String[] args) {
-		System.out.println(enesimaFibo(4));
+		System.out.println(enesimaFibo(6));
 	}
 }

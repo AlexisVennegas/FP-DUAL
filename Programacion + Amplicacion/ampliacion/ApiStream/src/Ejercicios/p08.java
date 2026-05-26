@@ -9,7 +9,8 @@ public class p08 {
 
 		List<Integer> numeros = List.of(1,2,3,4,5,6);
 		
-		Optional<Integer> maximo = numeros.stream().max(Integer::compare);
+		Optional<Integer> maximo = 	numeros.stream()
+									.max(Integer::compare);
 		
 		System.out.println(maximo.get());
 	}

@@ -21,12 +21,12 @@ public class GeneradorListas {
 		
 		
 		
-		List<Empleado> empleados=Arrays.asList(
-				new Empleado("SpongeBob","Krusty Krab","Bikini Bottom"),
-				new Empleado("Michael Knight","Knight Industries","Stanford"),
-				new Empleado("Clark Kent","Daily Planet","Metropolis"),
-				new Empleado("Neil Peart","Music","Hamilton")
-				);
+//		List<Empleado> empleados=Arrays.asList(
+//				new Empleado("SpongeBob","Krusty Krab","Bikini Bottom"),
+//				new Empleado("Michael Knight","Knight Industries","Stanford"),
+//				new Empleado("Clark Kent","Daily Planet","Metropolis"),
+//				new Empleado("Neil Peart","Music","Hamilton")
+//				);
 
 	}
 

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tienda nombre="PCras" ubicacion="Madrid">
+ <producto id="p01" categoria="portatil">
+ <modelo marca="HP">Victus 16</modelo>
+ <precio moneda="EUR">850</precio>
+ <stock>12</stock>
+ <lanzamiento año="2023"/>
+ </producto>
+ <producto id="p02" categoria="smartphone">
+ <modelo marca="Samsung">Galaxy S23</modelo>
+ <precio moneda="EUR">950</precio>
+ <stock>5</stock>
+ <lanzamiento año="2023"/>
+ </producto>
+ <producto id="p03" categoria="portatil">
+ <modelo marca="Apple">MacBook Air</modelo>
+ <precio moneda="EUR">1200</precio>
+ <stock>0</stock>
+ <lanzamiento año="2022"/>
+ </producto>
+ <producto id="p04" categoria="accesorio">
+ <modelo marca="Logitech">Ratón MX Master</modelo>
+ <precio moneda="EUR">99</precio>
+ <stock>25</stock>
+ <lanzamiento año="2021"/>
+ </producto>
+</tienda>
