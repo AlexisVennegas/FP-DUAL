@@ -8,7 +8,7 @@ import java.net.http.HttpResponse;
 public class ServicioGemini {
   //  private final String API_KEY = "AIzaSyBThPsBc75BawkXETUbqrvH14Bwz9hJfmM";
 	private final String API_KEY = "";
-    private final String URL_BASE = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent";
+    private final String URL_BASE = "";
 
     public String obtenerRespuesta(String mensajeUsuario) {
         try {

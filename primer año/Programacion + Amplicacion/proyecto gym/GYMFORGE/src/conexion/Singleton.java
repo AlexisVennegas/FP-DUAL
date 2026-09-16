@@ -14,9 +14,9 @@ public class Singleton {
 		//String user = System.getenv("DB_USER");
 		//String pass = System.getenv("DB_PASS");
 		
-		String url = "jdbc:mariadb://localhost:3306/gymforge";
-		String user = "erick";
-		String pass = "erick";
+		String url = "":
+		String user = "";
+		String pass = "";
 		
 		try {
 			conn = DriverManager.getConnection(url,user,pass);
