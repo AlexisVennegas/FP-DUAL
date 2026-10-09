@@ -5,7 +5,7 @@
     <style>
         .galeria {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-columns: repeat(3, 1fr); */
             gap: 10px;
 
         }
@@ -20,17 +20,30 @@
             transform: rotateY(180deg);
             transition: transform 0.5s;
         }
+        button {
+            margin: 10px auto;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
+ 
+
+    <button class="crearRejilla" type="button">Crear rejilla de memory</button>
     <div class="galeria">
-        <img id="1" class="imagen1" src="imagenes/carta memory reves.png" alt="Imagen 1">
+        <!-- <img id="1" class="imagen1" src="imagenes/carta memory reves.png" alt="Imagen 1">
         <img id="2" class="imagen2" src="imagenes/carta memory reves.png" alt="Imagen 2">
         <img id="3" class="imagen3" src="imagenes/carta memory reves.png" alt="Imagen 3">
         <img id="3" class="imagen4" src="imagenes/carta memory reves.png" alt="Imagen 4">
         <img id="2" class="imagen5" src="imagenes/carta memory reves.png" alt="Imagen 5">
-        <img id="1" class="imagen6" src="imagenes/carta memory reves.png" alt="Imagen 6">
+        <img id="1" class="imagen6" src="imagenes/carta memory reves.png" alt="Imagen 6"> -->
     </div>
 </body>
 
