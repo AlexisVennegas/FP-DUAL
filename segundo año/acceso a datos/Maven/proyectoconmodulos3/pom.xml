@@ -1,0 +1,18 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.iesclara.TestMaven</groupId>
+  <artifactId>proyectoconmodulos3</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>proyectoconmodulos3</name>
+  <modules>
+  	<module>fortnite</module>
+  	<module>frontend</module>
+  </modules>
+  <dependencies>
+  <dependency>
+ <groupId>commons-io</groupId>
+ <artifactId>commons-io</artifactId>
+ <version>2.19.0</version>
+</dependency></dependencies>
+</project>

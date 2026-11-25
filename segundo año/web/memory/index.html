@@ -1,0 +1,54 @@
+<html lang="es">
+<html lang="es">
+<head>
+    <title>Galería de 6 imágenes</title>
+
+    <style>
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+
+        .galeria img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+        .buttonsdiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        
+        }
+        .buttonsdiv input, .buttonsdiv button{
+            width: 300px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 20px;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="buttonsdiv">
+        <button id="insertarImagen" type="button">Crear Rejilla</button>
+        <!-- <input type="text" id="inputImagen">
+        <button id="buscarImagenes">Buscar Imagen</button> -->
+    </div>
+    <div class="galeria">
+    
+
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
